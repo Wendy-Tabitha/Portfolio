@@ -26,14 +26,14 @@
                     <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="#">Skills</a>
+                    <a href="#skills">Skills</a>
                 </li>
                 <li>
-                    <a href="#">Projects</a>
+                    <a href="#projects">Projects</a>
                 </li>
-                <li>
-                    <a href="#" class="button">Contact me</a>
-                </li>
+                <!-- <li>
+                    <a href="mailto:akinyiwendy46@gmail.com" class="button">Contact me</a>
+                </li> -->
             </ul>
             <a href="#" class="mobile-toggle"
             onclick="toggleMobileMenu();">
@@ -60,18 +60,17 @@
                 my projects.</span>
             </p>
             <div class="call-to-action">
-              <a href="#" class="button 
+              <a href="./CV/wendy_cv[1].docx" class="button 
               black">
                 View Resume
               </a>
-              <a href="#" class="button 
-              white">
+              <a href="mailto:akinyiwendy46@gmail.com" class="button white">
                 Contact Me
               </a>
             </div>
             <div class="social-links">
               <a href="#">
-                <img src="./images/github.png" 
+                <img src="./images/github.png"
                 alt="Github" width="48px">
               </a>
               <a href="#">
@@ -116,7 +115,7 @@
           </div>
         </div>
       </section>
-      <section class="skills container">
+      <section id="skills" class="skills container">
         <h2>
           <small>About Me</small>
           Skills
@@ -186,7 +185,7 @@
           </article>
         </div>
       </section>
-      <section class="bento">
+      <section id="projects" class="bento">
         <h2>
           <small>
             Previous
@@ -211,6 +210,55 @@
           <a class="bento-item">
             5
           </a> -->
+        </div>
+      </section>
+      <section class="chatbot container">
+        <h2>
+          <small>
+            Talk to me
+          </small>
+          Chatbot
+        </h2>
+        <div class="chatbot-blue">
+          <div class="chat-info">
+            <h3>Azure's AI Chatbot</h3>
+              <p>This is a chatbot that lets you
+                interact with my resume. You can
+                use it to ask questions about me
+                to get a better idea of who i 
+                am and what I've done.
+              </p>
+              <!-- <p></p> -->
+              <a href="./CV/wendy_cv[1].docx" class="button black">Download resume</a>
+          </div>
+          <div class="chat-box">
+            <div class="scroll-area">
+              <ul id="chat-log">
+                <li>
+                  <span class="avatar bot">
+                  AI</span>
+                  <div class="message">
+                    Hi, I'm a friendly chatbot
+                    that lets you interact with
+                    portfolio. How can I help
+                  </div>
+                </li>
+                <li>
+                  <span class="avatar user">User</span>
+                  <div class="message">
+                    I have a question to 
+                    ask about this resume.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="chat-message">
+              <input type="text" 
+              placeholder="Hey Wendy, what skills are you best at?">
+              <button class="button black">
+              Send</button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
