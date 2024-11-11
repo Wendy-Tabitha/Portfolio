@@ -26,7 +26,20 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 20px;
+  margin-top: 100px;
   /* padding-bottom: 1000px; */
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-top: 500px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    margin-top: 120px;
+  }
 }
 
 a {
@@ -74,58 +87,107 @@ header {
   nav {
     display: flex;
     align-items: center;
-    ul {
-      display: flex;
-      list-style-type: none;
-      gap: 5px;
-      li {
-        display: inline-block;
-        a {
-          display: inline-block;
-          padding: 20px;
-          color: var(--base);
-          &:hover {
-            background-color: var(--base-100);
-            border-radius: 10px;
-            text-decoration: none;
-          }
-        }
-      }
-    }
-    .mobile-toggle {
-      display: none;
-      color: var(--base-800);
-      padding: 10px;
-      @media (max-width: 768px) {
-        display: inline-block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-      }
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--yellow);
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: var(--base);
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    text-decoration: none;
+    background-color: var(--base-100);
+    border-radius: 10px;
+  }
+
+  nav .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--base);
+    text-decoration: none;
+    margin-right: auto;
+  }
+
+  .mobile-toggle {
+    display: none;
+    color: var(--base-800);
+    padding: 10px;
+    @media (max-width: 768px) {
+      display: inline-block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
     }
   }
+
   @media (max-width: 1024px) {
-    flex-direction: column;
-    align-items: center;
-  }
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
     nav {
-      margin-top: 10px;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+
+    nav ul {
       width: 100%;
-      ul {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-        &.active {
-          display: flex;
-        }
-        a {
-          width: 100%;
-        }
-      }
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+
+    nav ul.active {
+      display: flex;
+    }
+
+    nav ul li a {
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav .mobile-toggle {
+      display: inline-block;
+      position: absolute;
+      right: 10px; /* Ensure it's aligned to the right */
+      top: 50%; /* Vertically center it */
+      transform: translateY(-50%); /* Adjust for perfect centering */
     }
   }
 }
@@ -485,7 +547,7 @@ h3 {
     gap: 30px;
     display: flex;
     text-decoration: none;
-    @media (max-width:1024px) {
+    @media (max-width: 1024px) {
       flex-direction: column;
     }
     p {
@@ -572,4 +634,41 @@ h3 {
       }
     }
   }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--yellow);
+  z-index: 1000;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  /* padding: 1px 0; */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.typing-container {
+  margin-bottom: 10px;
+  position: relative;
+  white-space: nowrap;
+}
+
+footer p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+body {
+  margin-bottom: 80px;
 }
