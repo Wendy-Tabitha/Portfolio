@@ -137,8 +137,8 @@ header {
     .mobile-toggle {
       display: inline-block;
       position: absolute;
-      top: 20px;
-      right: 20px;
+      top: 2px;
+      right: 10px;
     }
 
     nav {
