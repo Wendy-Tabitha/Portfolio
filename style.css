@@ -118,7 +118,7 @@ header {
 
   ul li a {
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
     color: var(--base);
   }
 
@@ -473,7 +473,7 @@ h3 {
     height: auto;
     border-radius: 10px;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: transform 3s ease;
   }
 
   img:hover {
@@ -634,7 +634,7 @@ footer {
 
 footer p {
   margin: 0;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
 }
 
