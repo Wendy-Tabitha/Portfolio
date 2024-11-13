@@ -648,3 +648,97 @@ footer p {
 /* @media (max-width: 768px) {
   
 } */
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bento .bento-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 10px;
+    text-align: center;
+    small {
+      font-weight: bolder;
+    }
+  }
+
+  h2 {
+    font-size: 28px;
+    text-align: center;
+    small {
+      font-weight: bolder;
+    }
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+  .chat-message {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-top: 20px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .bento .bento-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    margin-top: 50px;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .bento .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
