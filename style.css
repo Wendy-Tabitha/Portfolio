@@ -444,16 +444,19 @@ h3 {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
   height: auto;
+  margin-left: 300px;
 
   @media (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
+    margin: 50px;
   }
 
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin: 50px;
   }
 }
 
