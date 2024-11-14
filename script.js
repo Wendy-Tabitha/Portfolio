@@ -1,43 +1,41 @@
 function myMenuFunction() {
-  var menuBtn = document.getElementById("myNavMenu")
+  var menuBtn = document.getElementById("myNavMenu");
 
   if (menuBtn.className === "nav-menu") {
-    menuBtn.className += " responsive"
+    menuBtn.className += " responsive";
   } else {
-    menuBtn.className = "nav-menu"
+    menuBtn.className = "nav-menu";
   }
 }
 
 // Dark mode
-
 const body = document.querySelector("body"),
-toggleSwitch = document.getElementById("toggle-switch");
+  toggleSwitch = document.getElementById("toggle-switch");
 
-toggleSwitch.addEventListener("click", ()=> {
+toggleSwitch.addEventListener("click", () => {
   body.classList.toggle("dark");
-})
-
-// Typing effect
-
-var typingEffect = new Typed(".typedText", {
-  strings: ["Designer", "Coder", "Developer"],
-
-  loop: true,
-  typedSpeed: 100,
-  backSpeed: 80,
-  backDelay: 2000,
 });
 
-// Scroll animation
+// Typing effect
+if (document.querySelector(".typedText")) {
+  var typingEffect = new Typed(".typedText", {
+    strings: ["Designer", "Coder", "Developer"],
+    loop: true,
+    typeSpeed: 100, // Corrected typo: changed `typedSpeed` to `typeSpeed`
+    backSpeed: 80,
+    backDelay: 2000,
+  });
+}
 
-const sr = ScrollReveal ({
+// Scroll animation
+const sr = ScrollReveal({
   origin: "top",
   distance: "80px",
   duration: 2000,
   reset: true,
 });
 
-sr.reveal(".featured-name", {delay: 100 });
+sr.reveal(".featured-name", { delay: 100 });
 sr.reveal(".text-info", { delay: 200 });
 sr.reveal(".text-btn", { delay: 200 });
 sr.reveal(".social_icons", { delay: 200 });
@@ -56,9 +54,10 @@ const srLeft = ScrollReveal({
 
 srLeft.reveal(".about-info", { delay: 100 });
 srLeft.reveal(".contact-info", { delay: 100 });
+srLeft.reveal(".bento-item", { delay: 100 });
 
 const srRight = ScrollReveal({
-  origin: "left",
+  origin: "right", // Corrected typo: changed `origin` to "right" for right animation
   distance: "80px",
   duration: 2000,
   reset: true,
@@ -75,19 +74,19 @@ function scrollActive() {
 
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight,
-
-    sectionTop = current.offsetTop - 50,
-    sectionId = current.getAttribute("id")
+      sectionTop = current.offsetTop - 500,
+      sectionId = current.getAttribute("id");
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document.querySelector(".nav-menu a[href*=" + sectionId + "]")
-      .classList.add("active-link");
+      document
+        .querySelector(".nav-menu a[href*=" + sectionId + "]")
+        .classList.add("active-link");
     } else {
-      document.querySelector(".nav-menu a[href*=" + sectionId + "]")
-      .classList.remove("active-link");
+      document
+        .querySelector(".nav-menu a[href*=" + sectionId + "]")
+        .classList.remove("active-link");
     }
   });
 }
 
 window.addEventListener("scroll", scrollActive);
-
