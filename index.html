@@ -1,285 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Web Design</title>
-  <link rel="icon" type="image/jpg" href="./images/favicon.jpg">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-    rel="stylesheet" />
-  <script src="./script.js" defer></script>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <a href="#" class="logo-holder">
-        <div class="logo">WT</div>
-        <div class="logo-text">Wendy's Portfolio Website</div>
-      </a>
-      <ul id="menu">
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="mailto:akinyiwendy46@gmail.com">Contact me</a>
-        </li>
-      </ul>
-      <a href="#" class="mobile-toggle" onclick="toggleMobileMenu();">
-        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-          width="24" height="24" fill="none" viewBox="0 0 24 24">
-          <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
-        </svg>
-      </a>
-    </nav>
-  </header>
-  <main>
-    <section class="hero container">
-      <div class="hero-blue">
-        <div>
-          <h1><small>Hi I'm</small>
-            Wendy Tabitha Akinyi
-          </h1>
-          <p>
-            An apprentice software developer
-            at Zone 01 Kisumu currently doing Go,
-            Javascript, UI, UX, HTML and CSS. <span>
-              I'm interested in web designing,
-              web development and Ai which is why
-              i add things like ChatGPT, Gemini in
-              my projects.</span>
-          </p>
-          <div class="call-to-action">
-            <a href="./CV/wendy_cv[1].docx" class="button 
-              black">
-              View Resume
-            </a>
-            <a href="mailto:akinyiwendy46@gmail.com" class="button white">
-              Contact Me
-            </a>
-          </div>
-          <div class="social-links">
-            <a href="https://github.com/Wendy-Tabitha">
-              <img src="./images/github.png" alt="Github" width="48px">
-            </a>
-            <a href="https://www.linkedin.com/in/wendy-tabitha-387b0722b/">
-              <img src="./images/linkedin.png" alt="Linkedin" width="48px">
-            </a>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="icon" type="image/jpg" href="./images/favicon.jpg">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Nav menu -->
+    <div class="container">
+      <nav id="header">
+        <div class="nav-logo">
+          <p class="nav-name">Wendy</p>
         </div>
-      </div>
-      <div class="hero-yellow">
-        <img src="images/image1.png" alt="Wendy Akinyi" width="100%">
-      </div>
-    </section>
-    <section class="logos container">
-      <div class="marquee">
-        <div class="track">
-          <img src="./images/html.png" alt="HTML" width="128px">
-          <img src="./images/css.png" alt="HTML" width="90px">
-          <img src="./images/javascript.png" alt="HTML" height="140px">
-          <img src="./images/go.png" alt="HTML" height="128px">
-          <img src="./images/reactlogo.png" alt="HTML" width="128px">
-          <img src="./images/vscodelogo.jpg" alt="HTML" width="128px">
-          <img src="./images/html.png" alt="HTML" width="128px">
-          <img src="./images/css.png" alt="HTML" width="90px">
-          <img src="./images/javascript.png" alt="HTML" height="140px">
-          <img src="./images/go.png" alt="HTML" height="128px">
-          <img src="./images/reactlogo.png" alt="HTML" width="128px">
-          <img src="./images/vscodelogo.jpg" alt="HTML" width="128px">
-        </div>
-      </div>
-    </section>
-    <section id="skills" class="skills container">
-      <h2>
-        <small>About Me</small>
-        Skills
-      </h2>
-      <div class="holder-blue">
-        <div class="left-column">
-          <h3>Frontened</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-          </ul>
-          <h3>Backend</h3>
-          <ul>
-            <li>Go</li>
-            <li>Javascript</li>
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav_menu_list">
+            <li class="nav_list">
+              <a href="#home" class="nav-link active-link">Home</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#about" class="nav-link">About</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#projects" class="nav-link">Projects</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#contact" class="nav-link">Contact</a>
+              <div class="circle"></div>
+            </li>
           </ul>
         </div>
-        <div class="right-column">
-          <h3>A bit about me</h3>
-          <p>Wendy is a girl with
-            a curious mind, always eager to
-            explore the world of technology.
-            Currently immersing myself in the
-            languages of the web: Go, HTML, CSS,
-            and JavaScript. Excited to build the future,
-            one line of code at a time.
-            As a Training Software Developer,
-            I specialize in leveraging Go, CSS, HTML,
-            and JavaScript to develop effective and
-            engaging training solutions. My focus is on
-            creating intuitive and user-friendly interfaces
-            that enhance the learning experience. I am
-            passionate about crafting software that simplifies
-            complex concepts and empowers learners
-            to achieve their goals.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="work-experience container">
-      <h2>
-        <small>Recent</small>
-        Work Experience
-      </h2>
-      <div class="jobs">
-        <article>
-          <figure>
-            <div>
-              <img src="./images/IMG_0477.JPG" alt="Workplace-1" width="100%">
-              <figcaption>
-                Workplace
-              </figcaption>
-            </div>
-          </figure>
-          <h3>Zone 01 Kisumu</h3>
-          <div>2024</div>
-          <p>At a safeguarding
-            training session</p>
-        </article>
-        <article>
-          <figure>
-            <div>
-              <img src="./images/wendy.jpg" alt="Workplace-2" width="100%">
-              <figcaption>
-                Workplace
-              </figcaption>
-            </div>
-          </figure>
-          <h3>Zone 01 Kisumu</h3>
-          <div>2024</div>
-          <p>At a hackathon held
-            by Google developers Kisumu</p>
-        </article>
-        </article>
-      </div>
-    </section>
-    <section id="projects" class="bento">
-      <h2>
-        <small>
-          Previous
-        </small>
-        Completed projects
-      </h2>
-      <div class="bento-grid">
-        <div class="bento-item">
-          <img src="./images/Screenshot 2024-11-01 205234.png" alt="Project-1" width="100%">
-          <p>
-            Developed a server using Go, allowing users to generate ASCII art through a web interface.
-            Implemented various text banner styles using Go functions.
-            Created HTML forms for user input and handled POST requests to process and display ASCII art.
-          </p>
-        </div>
-        <div class="bento-item">
-          <img src="./images/Screenshot 2024-11-01 210516.png" alt="Project-2" width="100%">
-          <p>
-            Built a user-friendly website for displaying band information from an API.
-            Utilized HTML, CSS, and JavaScript to create data visualizations like blocks, cards, and tables.
-            Implemented client-server communication to dynamically fetch and display data.
-          </p>
-        </div>
-        <div class="bento-item">
-          <img src="./images/Screenshot 2024-11-12 223819.png" alt="Project-3" width="100%">
-          <p>
-            Built a web application for organizing superhero data from a JSON file.
-            Implemented table sorting for various data types using JavaScript.
-            Designed a user interface with search functionality to filter superhero data dynamically.
-          </p>
-        </div>
-        <div class="bento-item">
-          <img src="./images/Screenshot from 2024-11-13 15-11-24.png" alt="Project-4" width="100%">
-          <p>
-            Created a user interface for the HackerNews API to display news stories, jobs, and polls.
-            Utilized Go to communicate with the API and retrieve data.
-            Implemented lazy loading to load more posts only when needed, improving performance.
-            Designed a live data section that updates users with new information periodically using JavaScript events.
-          </p>
-        </div>
-        <!-- <a class="bento-item">
-            5
-          </a> -->
-      </div>
-    </section>
-    <section class="chatbot container">
-      <h2>
-        <small>
-          Talk to me
-        </small>
-        Chatbot
-      </h2>
-      <div class="chatbot-blue">
-        <div class="chat-info">
-          <h3>Azure's AI Chatbot</h3>
-          <p>This is a chatbot that lets you
-            interact with my resume. You can
-            use it to ask questions about me
-            to get a better idea of who i
-            am and what I've done.
-          </p>
-          <!-- <p></p> -->
-          <a href="./CV/wendy_cv[1].docx" class="button black">Download resume</a>
-        </div>
-        <div class="chat-box">
-          <div class="scroll-area">
-            <ul id="chat-log">
-              <li>
-                <span class="avatar bot">
-                  AI</span>
-                <div class="message">
-                  Hi, I'm a friendly chatbot
-                  that lets you interact with
-                  portfolio. How can I help
-                </div>
-              </li>
-              <li>
-                <span class="avatar user">User</span>
-                <div class="message">
-                  I have a question to
-                  ask about this resume.
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="chat-message">
-            <input type="text" placeholder="Hey Wendy, what skills are you best at?">
-            <button class="button black">
-              Send</button>
+        <!-- Dark mode -->
+        <div class="mode">
+          <div class="moon-sun" id="toggle-switch">
+            <i class="fa fa-moon" id="moon"></i>
+            <i class="fa fa-sun" id="sun"></i>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2024 Portfolio. All rights reserved.</p>
-      <p>Built by:</p>
-      <p>Wendy Akinyi</p>
+        <div class="nav-menu-btn">
+          <i class="fa fa-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+      <!-- main -->
+      <main class="wrapper">
+        <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="hello">
+              <p>Hello I'm a,</p>
+            </div>
+            <div class="featured-name">
+              <span class="typedText"></span>
+            </div>
+            <div class="text-info">
+              <p>
+                My name is Wendy! I'm a web developer with 8 months experience
+              </p>
+            </div>
+            <div class="text-btn">
+              <a href="mailto:akinyiwendy46@gmail.com" class="btn hire-btn">Hire Me</a>
+              <a href="./CV/wendy_cv[1].pdf" class="btn">
+                Download CV<i class="fa-solid fa-file"></i>
+              </a>
+            </div>
+            <div class="social_icons">
+              <div class="icon_circle"></div>
+                <a href="https://github.com/Wendy-Tabitha" class="icon"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/wendy-tabitha-387b0722b/" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+              <img src="./images/pic.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+        <!-- about box -->
+        <section class="section" id="about">
+          <div class="top-header">
+            <h1>About me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="about-info">
+                <figure class="about-me">
+                  <figcaption>
+                    <img src="./images/pic.jpg" alt="" class="profile" />
+                    <h2>Web Developer</h2>
+                    <p>
+                      My name is Wendy Akinyi! I'm a web developer with 8 months
+                      experience
+                    </p>
+                  </figcaption>
+                </figure>
+                <a href="mailto:akinyiwendy46@gmail.com" class="about-me-btn">Hire Me</a>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-box">
+                <span class="title">HTML</span>
+                <div class="skill-bar html">
+                  <span class="skill-per">
+                    <span class="tooltip">70%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <span class="title">CSS</span>
+                <div class="skill-bar css">
+                  <span class="skill-per">
+                    <span class="tooltip">75%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <span class="title">Go</span>
+                <div class="skill-bar">
+                  <span class="skill-per go">
+                    <span class="tooltip">65%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <span class="title">Javascript</span>
+                <div class="skill-bar">
+                  <span class="skill-per javascript">
+                    <span class="tooltip">30%</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Project box -->
+        <section class="section" id="projects">
+          <div class="top-header">
+            <h1>Projects</h1>
+          </div>
+          <div class="project-container">
+            <a href="projects.html" class="project-box">
+              <i class="fa-solid fa-briefcase"></i>
+              <h3>Completed</h3>
+              <label>3+ Finished Projects</label>
+            </a>
+            <a class="project-box">
+              <i class="fa fa-users"></i>
+              <h3>Clients</h3>
+              <label>3+ Happy clients</label>
+            </a>
+            <a href="projects.html" class="project-box">
+              <i class="fa fa-award"></i>
+              <h3>Experience</h3>
+              <label>8 months in web development</label>
+            </a>
+          </div>
+        </section>
+        <!-- contact box -->
+        <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Let's work together</h1>
+            <span>Do you have a project in mind, contact me here</span>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="contact-info">
+                <h2>Find me <i class="fa fa-corner-right-down"></i></h2>
+                <p>
+                  <i class="fa fa-envelope"></i>Email:akinyiwendy46@gmail.com
+                </p>
+                <p><i class="fa fa-phone"></i>Phone:0743740177</p>
+              </div>
+            </div>
+            <div class="col">
+              <!-- <div class="form-control">
+                <div class="form-inputs">
+                  <input
+                    type="text"
+                    class="input-field"
+                    placeholder="Your Name"
+                  />
+                  <input
+                    type="text"
+                    class="input-field"
+                    placeholder="Your Email"
+                  />
+                </div>
+                <div class="text-area">
+                  <input
+                    type="text"
+                    class="input-subject"
+                    placeholder="Subject"
+                  />
+                  <textarea placeholder="Message"></textarea>
+                </div> -->
+                <div class="form-button">
+                  <!-- <button class="btn">Send<i class="fa-solid fa-paper-plane"></i></button> -->
+                  <a href="mailto:akinyiwendy46@gmail.com" class="btn">Click to send email<i class="fa fa-phone" ></i></a>
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- footer -->
+      <footer>
+        <div class="middle-footer">
+          <ul class="footer-menu">
+            <li class="footer_menu_list">
+              <a href="#home">Home</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#about">About</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social-icons">
+          <div class="icon"><i class="fa-brands fa-github"></i></div>
+          <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+        </div>
+        <div class="bottom-footer">
+          <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Wendy</a> - All rights reserved 2024</p>
+        </div>
+      </footer>
     </div>
-  </footer>
-</body>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
