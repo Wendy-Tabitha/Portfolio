@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="icon" type="image/jpg" href="./images/favicon.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav id="header">
+        <div class="nav-logo">
+          <p class="nav-name">Wendy</p>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav_menu_list">
+            <li class="nav_list">
+              <a href="index.html" class="nav-link active-link">Home</a>
+              <div class="circle"></div>
+            </li>
+          </ul>
+        </div>
+        <!-- Dark mode -->
+        <div class="mode">
+          <div class="moon-sun" id="toggle-switch">
+            <i class="fa fa-moon" id="moon"></i>
+            <i class="fa fa-sun" id="sun"></i>
+          </div>
+        </div>
+        <div class="nav-menu-btn">
+          <i class="fa fa-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+      <main>
+        <section id="projects" class="bento">
+          <h2>Completed projects</h2>
+          <div class="bento-grid">
+            <div class="bento-item">
+              <img
+                src="./images/Screenshot 2024-11-01 205234.png"
+                alt="Project-1"
+                width="100%"
+              />
+              <p>
+                Developed a server using Go, allowing users to generate ASCII
+                art through a web interface. Implemented various text banner
+                styles (shadow, standard, thinkertoy) using Go functions.
+                Created HTML forms for user input and handled POST requests (Go)
+                to process and display ASCII art.
+              </p>
+            </div>
+            <div class="bento-item">
+              <img
+                src="./images/Screenshot 2024-11-01 210516.png"
+                alt="Project-2"
+                width="100%"
+              />
+              <p>
+                Built a user-friendly website for displaying band information
+                from an API. Utilized HTML, CSS, and JavaScript to create data
+                visualizations like blocks, cards, and tables. Implemented
+                client-server communication (Go) to dynamically fetch and
+                display data.
+              </p>
+            </div>
+            <div class="bento-item">
+              <img
+                src="./images/Screenshot 2024-11-12 223819.png"
+                alt="Project-3"
+                width="100%"
+              />
+              <p>
+                Built a web application for organizing superhero data from a
+                JSON file (fetch API). Implemented table sorting
+                (ascending/descending) for various data types (strings, numbers)
+                using JavaScript. Designed a user interface with search
+                functionality (text input) to filter superhero data dynamically.
+              </p>
+            </div>
+            <div class="bento-item">4</div>
+            <!-- <a class="bento-item">
+                      5
+                    </a> -->
+          </div>
+        </section>
+        <section class="experience">
+          <h2>Experience</h2>
+          <p>
+            The world of tech is not a smooth journey, but hardwork and
+            resilience can make one achieve great goals.
+          </p>
+        </section>
+    </main>
+    <footer>
+      <div class="middle-footer">
+        <ul class="footer-menu">
+          <li class="footer_menu_list">
+            <a href="#projects">Projects</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-social-icons">
+        <div class="icon"><i class="fa-brands fa-github"></i></div>
+        <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+      </div>
+      <div class="bottom-footer">
+        <p>
+          Copyright &copy;
+          <a href="#home" style="text-decoration: none">Wendy</a> - All
+          rights reserved 2024
+        </p>
+      </div>
+    </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
