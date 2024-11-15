@@ -1,12 +1,13 @@
 # Wendy Portfolio
 
 Welcome to my portfolio! This project showcases my work, skills, and accomplishments as a developer/designer/creator. It includes selected projects, highlights my technical expertise, and demonstrates my approach to problem-solving and innovation.
-About
 
-- This portfolio serves as a central hub for my work, featuring:
+## About
 
-    Information about my technical skills and tools I use.
-    Insights into my workflow, process, and problem-solving strategies.
+This portfolio serves as a central hub for my work, featuring:
+
+- Information about my technical skills and tools I use.
+- Insights into my workflow, process, and problem-solving strategies.
 
 ## Features
 
