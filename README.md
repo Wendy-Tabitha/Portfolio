@@ -36,7 +36,7 @@ This portfolio serves as a central hub for my work, featuring:
 
 - Feel free to reach out to me for project collaborations, job opportunities, or questions!
 
-    Email: [akinyiwendy46@gmail.com]
+    Email: **akinyiwendy46@gmail.com**
 
     LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/wendy-tabitha-387b0722b/)
 
