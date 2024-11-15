@@ -24,7 +24,7 @@ This portfolio serves as a central hub for my work, featuring:
 
 ## How to View
 
-- Visit the live website: [portfolio](https://wendy-tabitha.github.io/Wendys-Portfolio/#skills)
+- Visit the live website: [portfolio](https://wendy-tabitha.github.io/Portfolio/)
 
 ## Projects Featured
 
