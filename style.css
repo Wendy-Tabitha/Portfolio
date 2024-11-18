@@ -992,14 +992,15 @@ footer {
 .experience {
   margin: 50px;
   padding: 300px;
-  padding-bottom: 200px;
+  /* padding-bottom: 200px; */
 
   h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 30px;
     font-family: sans-serif;
+    padding-bottom: 20px;
   }
 
   p {
