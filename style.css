@@ -168,6 +168,11 @@ body.dark #experience {
   color: #fff;
 }
 
+body.dark #projects {
+  opacity: 1;
+  color: #fff;
+}
+
 /* wrapper */
 
 .wrapper {
