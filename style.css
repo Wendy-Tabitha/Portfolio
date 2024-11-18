@@ -175,6 +175,11 @@ body.dark #projects {
   color: #fff;
 }
 
+body.dark #paragraph {
+  opacity: 1;
+  color: #000;
+}
+
 /* wrapper */
 
 .wrapper {
