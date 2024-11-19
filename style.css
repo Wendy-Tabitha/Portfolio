@@ -861,6 +861,7 @@ footer {
     align-items: center;
     margin-top: 100px;
     margin-bottom: 0;
+    color: var(--text-color);
   }
 }
 
@@ -1039,6 +1040,7 @@ footer {
     font-size: 30px;
     font-family: sans-serif;
     padding-bottom: 20px;
+    color: var(--text-color);
   }
 
   p {
